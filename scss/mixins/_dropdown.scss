@@ -1,0 +1,7 @@
+@use '../variables';
+
+@mixin dropdown-icon {
+	#{variables.$dropdown-selector} {
+		@content;
+	}
+}

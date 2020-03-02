@@ -1,0 +1,3 @@
+@use 'sass:string';
+$media-query: '(min-width: 48em)' !default;
+$dropdown-selector: '.menu-item-has-children > a:after' !default;

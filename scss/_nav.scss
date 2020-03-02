@@ -1,0 +1,83 @@
+@use 'variables';
+
+.primary-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&[aria-hidden="true"] {
+		display: none;
+	}
+	&:target,
+	&[aria-hidden="false"] {
+		display: block;
+	}
+
+	& > .menu-item {
+		display: block;
+		@media #{variables.$media-query} {
+			display: inline-block;
+		}
+	}
+}
+
+.sub-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&[aria-hidden="true"] {
+		display: none;
+	}
+	&:target,
+	&[aria-hidden="false"] {
+		display: block;
+	}
+
+	@media #{variables.$media-query} {
+		left: 0;
+		position: absolute;
+		top: 100%;
+	}
+
+	& > .menu-item {
+		display: block;
+	}
+}
+
+.primary-menu[data-action="hover"] {
+	& .menu-item {
+		&:hover {
+			@media #{variables.$media-query} {
+				& > .sub-menu,
+				& > .sub-menu[aria-hidden="true"] {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.site-menu-toggle {
+	&[aria-hidden="true"] {
+		display: none;
+	}
+
+	&[aria-hidden="false"] {
+		display: block;
+	}
+
+	@media #{variables.$media-query} {
+		display: none;
+	}
+}
+
+.menu-item {
+	@media #{variables.$media-query} {
+		position: relative;
+	}
+}
+
+.menu-item-has-children {
+	white-space: nowrap;
+}

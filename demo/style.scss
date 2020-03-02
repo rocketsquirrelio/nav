@@ -1,0 +1,12 @@
+// For development only
+@use '../index' with (
+    $media-query: '(min-width: 48em)',
+    $dropdown-selector: '.masthead .menu-item-has-children > a:after',
+);
+
+@include index.dropdown-icon {
+  content: '+';
+  display: inline-block;
+	font-weight: 700;
+	margin-left: .25em;
+}
