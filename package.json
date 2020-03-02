@@ -1,6 +1,6 @@
 {
   "name": "@rocketsquirrelio/nav",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An accessible, responsive navigation component for WordPress.",
   "main": "index.js",
   "repository": {
