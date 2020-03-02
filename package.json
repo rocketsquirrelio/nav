@@ -5,14 +5,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codyogden/nav.git"
+    "url": "git+https://github.com/rocketsquirrelio/nav.git"
   },
   "author": "Cody Ogden <cody@codyogden.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codyogden/nav/issues"
+    "url": "https://github.com/rocketsquirrelio/nav/issues"
   },
-  "homepage": "https://github.com/codyogden/nav#readme",
+  "homepage": "https://github.com/rocketsquirrelio/nav#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
