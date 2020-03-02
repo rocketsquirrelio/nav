@@ -1,6 +1,6 @@
 @use 'variables';
 
-.primary-menu {
+.#{variables.$menu-class} {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -45,7 +45,7 @@
 	}
 }
 
-.primary-menu[data-action="hover"] {
+.#{variables.$menu-class}[data-action="hover"] {
 	& .menu-item {
 		&:hover {
 			@media #{variables.$media-query} {

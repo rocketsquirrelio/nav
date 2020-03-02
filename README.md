@@ -53,6 +53,7 @@ This version takes advantage of the latest language features in Dart Sass. Overr
 ```scss
 // => style.scss
 @use '@rocketsquirrelio/nav' with (
+	$menu-class: 'primary-menu',
     $media-query: '(min-width: 48em)',
     $dropdown-selector: '.menu-item-has-children > a:after',
 );
